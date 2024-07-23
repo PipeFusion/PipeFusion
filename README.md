@@ -1,5 +1,5 @@
 <div align="center">
-<h1>PipeFusion: A Suite for Parallel Inference Diffusion Transformers (DiTs)</h1>
+<h1>  This repository is no longer maintained. We have improved PipeFusion from a parallel method into a serving framework called xDiT. Please follow [xDiT](https://github.com/xdit-project/xDiT) for further updates. </h1>
 
   <div align="center">
   <a href="https://opensource.org/licenses/Apache-2.0">
