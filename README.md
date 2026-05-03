@@ -5,8 +5,8 @@
   <a href="https://opensource.org/licenses/Apache-2.0">
     <img alt="License: Apache 2.0" src="https://img.shields.io/badge/License-Apache%202.0-4E94CE.svg">
   </a>
-  <a href="https://arxiv.org/abs/2405.14430">
-    <img src="https://img.shields.io/badge/Paper-Arixv-FFB000.svg" alt="Paper">
+  <a href="https://openreview.net/forum?id=5xwyxupsLL">
+    <img src="https://img.shields.io/badge/Paper-NeurIPS%202025-FFB000.svg" alt="Paper">
   </a>
 </div>
 </div>
@@ -19,7 +19,7 @@ The backend networks of the diffusion model primarily include U-Net and Transfor
 1. Tensor Parallelism. (DiT, U-Net)
 2. Sequence Parallelism, [USP](https://arxiv.org/abs/2405.07719) is a unified sequence parallel approach including DeepSpeed-Ulysses, Ring-Attention: (DiT)
 3. Displaced Patch Parallelism, named [DistriFusion](https://arxiv.org/abs/2402.19481): (DiT, U-Net)
-4. Displaced Patch Pipeline Paralelism, named [PipeFusion](https://arxiv.org/abs/2405.14430), first proposed in this repo. (DiT)
+4. Displaced Patch Pipeline Paralelism, named [PipeFusion](https://openreview.net/forum?id=5xwyxupsLL), first proposed in this repo. (DiT)
 
 The communication and memory cost of the above parallelism for DiT is listed in the following table. (* indicates comm. can be hidden by computation, but needs extra buffers.)
 
@@ -222,13 +222,13 @@ During inference with classifier-free guidance, the batch size for inputs to DiT
 
 ## Cite Us
 ```
-@article{wang2024pipefusion,
-      title={PipeFusion: Displaced Patch Pipeline Parallelism for Inference of Diffusion Transformer Models}, 
-      author={Jiannan Wang and Jiarui Fang and Jinzhe Pan and Aoyu Li and PengCheng Yang},
-      year={2024},
-      eprint={2405.07719},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{
+    fang2025pipefusion,
+    title={PipeFusion: Patch-level Pipeline Parallelism for Diffusion Transformers Inference},
+    author={Jiarui Fang and Jinzhe Pan and Aoyu Li and Xibo Sun and WANG Jiannan},
+    booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+    year={2025},
+    url={https://openreview.net/forum?id=5xwyxupsLL}
 }
 ```
 
